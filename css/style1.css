@@ -1,0 +1,124 @@
+h1{
+    word-spacing: 5px;
+    letter-spacing: 3px;
+   
+}
+p{  
+   
+    line-height: 1.4rem;
+    text-align: justify;   /* ending text will be in the order in all lines */
+    text-indent: 2.5rem;    /*line will start after some space */
+}
+
+/* first letter in the p element */
+p::first-letter{
+    font-size: 30px;
+}
+p::first-line{
+    color: rgb(0, 21, 255);
+}
+/* after visiting link this will turn  */
+a:link{
+    color: rgb(70, 65, 13);
+}
+a:visited{
+  color: rgb(78, 7, 39);
+}
+/* in this color link will display after visiting that will turn a:visited values*/
+
+/* if cursor touch it will  */
+a:hover{
+  color: blueviolet;
+}
+a:focus{
+    color: aqua;
+}
+/* while clicking this color will show in that fraction  */
+a:active{
+    color: chartreuse;
+}
+/* it doesnt consider abt the class name but , in p tag, class attribute exsits this will apply
+we can use id too, we need to give attribute in [] of which tag */
+/* p[class]{
+   color: coral;
+}
+p[id]{
+   color: rgb(161, 149, 17);
+} */
+/* can also specify more by giving attribute value */
+/* p[id=p]{
+    color: rgb(161, 149, 17);
+ } */
+ /* if class/id attrobutes has mutiple class/id names we should use ~ this symbol to  */
+ /* p[id ~=p]{
+    color: rgb(161, 149, 17);
+ } */
+ /* if the class name starts(pre-fix filtering) with the provided letter  these styles will apply*/
+ /* p[class^='m']{
+    color: blueviolet;
+ } */
+ /* for suffix filtering (class last lettter)  */
+ /* p[class$='a']{
+    color: blueviolet;
+ } */
+
+ .divp{
+   border: 2px solid rgb(128, 0, 64);
+   max-width: 1000px;
+ }
+ /* child always takes the specified width within the parent box width.
+ if  parent/container width is not their, element will take and calculate the width based on the window width */
+.p1{
+    /* border-width: 7px 2px 3px 2px;   t/r/b/l clock wise  */
+     border: 2px solid black; 
+    width: 40%;
+    padding: 20px;  
+    margin: 10px;
+ }
+
+ /* if we give min/max-width or min/max-height this will make it responsive */
+.div2{
+    border: 3px solid red;
+    max-width: 1000px;
+   
+}
+ .p2{
+    width: 400px;
+    /* border-width: 15px 2px;   tb/rl  */
+    /* border-width: 15px 2px 10;   top/ l&r /bottom */
+    /* border: 2px solid green;  */
+    /* by giving moz,webkit this will support the prperty for all the browsers
+    moz - for fire fox borwser / webkit -chorme/safari browser default values before introducing border radious property; */
+    /* -moz-border-radius:10px;
+    -webkit-border-radius:10px; */
+    /* shadow val1-hor/ val2-ver/ val3-blurness / insert val=> this give hadow inside */
+    /* box-shadow: 8px 9px 5px rgb(57, 198, 21);
+    -moz-border-shadow:8px 9px 5px rgb(57, 198, 21);
+    -webkit-border-shadow:8px 9px 5px rgb(57, 198, 21);
+    border-radius: 10px;
+    padding: 12px;
+    margin:20px 10px ; */
+    /* overflow: scroll;   */  }
+ 
+ /* padding - border inside
+    margin - border outside
+ */
+
+ /* visibility:hidden: => this is will show the allocated space but will hide the text*/
+
+ /* display: block- line by line take full width eg: p,h,ol,ul these blokc elemetns we can change it to inline behaviour(next to next) by by giving valu inline to the property
+ inline - next to next take nessesary width  eg: a,img,span
+ inline-block : next to next will display but take nessesary width
+ none : nothing will be displayed */
+
+
+ /* Border image
+    border: 6px solid => first we should allocate the space
+    border-image: url() 4px steatch/round => url should provide, we should give like this 
+ */
+ li{
+display: inline;
+margin: 10px;
+ }
+
+ 

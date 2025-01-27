@@ -1,0 +1,65 @@
+/*.square{
+    height: 300px;
+    width: 300px;
+    background-color: aqua;
+     transition-duration:3s; */
+    /* secified values only transition will happens (All default value)*/
+    /* transition-property: background-color; */
+    /* trasition timing-(ease-in => first slow then fast
+    ease-out => fast to slow / linear=> uniform speed /ease-in-out => slow to fast to slow) 
+    we can also customise the speed in the developer tools
+    */
+  /*  transition-timing-function:ease-in;   
+    transition-delay: 2s; trasition starts after 2sec*/
+
+   /* transition: 3s 1s ease-in; 1st val-dur / 2nd val for delay 
+}
+   */
+/* 
+.square:hover{
+   background-color: rgb(65, 97, 224);
+   height: 400px;
+   transform: rotate(45deg);
+   transform: rotate(90deg);
+   transform: rotate(180deg);
+    x-hor axsis rotate/ y-vertical axsis rotate
+   transform: rotatex(180deg) ;                   
+   transform: scale(1);    scale will double the size  */
+ /*transform: translate(20px);     move aside(20px) in the x axsis  
+   transform: translatey(20px); }    move aside(20px) in the x axsis */
+   
+
+
+   .box{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    position: relative;
+    background-color: rgb(180, 30, 113);
+    animation-name: circle;
+    animation-duration: 5s;
+    animation-fill-mode: forwards; /* by giving this it won't get back to initial state perform all tasks and stay in the final view */
+    animation-iteration-count: 2;  /* this times task will perform */
+    
+
+
+}
+
+   /* all this will perform with in 5s and goes back to initial stage */
+   @keyframes circle {
+    0%{
+        background-color: aqua;
+        
+        left: 0px;
+        top: 0px;
+       
+    }
+      100%{
+        background-color: rgb(54, 99, 10);
+        width: 200px;
+        height: 200px;
+        left: 600px;
+        top: 600px;
+
+      }
+   }

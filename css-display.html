@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS -concepts</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        header{
+            border: 2px solid red;
+            width: 500px;
+            margin: auto;
+        }
+        img{
+            width: 90px;
+            height: 70px;
+            margin: auto;
+            display: block;
+            
+        }
+        h2{
+             margin: 0; /*this will reduce the margin */ 
+             text-align: center;
+        } 
+        .con{
+
+        }
+        
+        .container{
+              border: 3px solid blue;
+              margin: 10px;
+              padding: 10px;
+              display: inline-block;
+              width: 30%;
+        }
+    </style>
+</head>
+<body>
+       <!-- display property  -->
+       <!-- block - will occupay entire width and text will set to next line , 
+           block elements: p,h,ol,ul 
+       inline- occupaies the available (nessecery) width, do not start on the next line
+         eg: images, span.     we use h,p tags in inline to convert the next to next line
+       
+        inline-block:  take nessecery width do not start in the new line
+
+        none: not will be displayed
+         -->       
+
+       <!-- block -->
+   <header class="top">  
+      <img src="images/plant.webp" >
+      <!-- <img src="images/plant.webp" > -->
+       <h2>Welcome to my website</h2>
+   </header>
+   <br>
+   <!-- inline  --> 
+   <div class="con">
+    <div class="container">
+        <h2>heading</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In quis suscipit laborum ea ab?</p>
+    </div>
+    <div class="container">
+        <h2>heading</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In quis suscipit laborum ea ab?</p>
+    </div>
+    <div class="container">
+        <h2>heading</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In quis suscipit laborum ea ab?</p>
+    </div>
+   </div>
+</body>
+</html>

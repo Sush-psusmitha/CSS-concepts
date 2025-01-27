@@ -1,0 +1,86 @@
+body{
+    background-color: bisque;
+}
+
+.container{
+   display: grid;
+   /* can also give %/px makes columns in the given count*/
+   /* grid-template-columns: 30% 1fr 1fr 1fr; */
+   /* grid-template-columns: 300px 200px auto; */
+   /* grid-template-columns: repeat(4, 1fr);   val1=>times, val2=>width space*/
+   /* grid-template-columns: minmax( 200px,1fr) 1fr 1fr 1fr; for 1st val we gave 200px , will maintain till 200px won't reduce below */
+   /* grid-template-columns: minmax(200px, 1fr);  */
+   /* grid-template-columns: repeat(3,minmax(200px, 1fr)); */
+   /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));  autofill also used but this will take only the specified width won't take on it's own */
+   /* column-gap: 20px;
+   row-gap: 20px;  we can also give gap will consider both row and column */
+   gap: 20px;
+}
+
+.para{
+    color: white;
+    background-color: rgb(117, 202, 202);
+    padding: 8px;
+}
+
+.outer{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+  margin: 10px;
+  grid-template-rows: 100px 200px 100px;
+   /*grid-auto-flow: column;   default row(side by side content will flow)  column(line by line)*/
+}
+.box{
+    background-color: chartreuse;
+    color: white;
+    font-size: 4rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+}
+/* want box1 to span into 2nd column */
+/*.b1{
+   grid-column-start: 1;
+  grid-column-end: 3;  instead we give simple grid-column*/
+  /* grid-column: 1/3; 
+  grid-column: span 2;
+}*/
+/* .b3{
+    grid-row: 2/4;
+} */
+ .layout{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 10vh 80vh 10vh;
+    grid-template-areas:
+    "h h h h h"
+    "sb1 m m m sb2"
+    "f f f f f" 
+    ;   
+ }
+ .header{
+    grid-area: h;
+ }
+ .sidebar1{
+    grid-area: sb1;
+ }
+ .main{
+    grid-area: m;
+ }
+ .sidebar2{
+    grid-area: sb2;
+ }
+ .footer{
+    grid-area: f;
+ }
+ .layout div{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    background-color: blueviolet;
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+ }

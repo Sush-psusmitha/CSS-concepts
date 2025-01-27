@@ -1,0 +1,15 @@
+
+/* if we gave float , we must give WIDTH VALUE
+left- starts from left side 
+right - starts from right side 
+*/
+.col p{
+width: 300px;  /* 30% of the window */
+float: right;
+} 
+
+/* if we want to target the particular child */
+.col p:nth-child(1){
+    clear: right;
+}
+/* clear - it starts specfied side then it will clear the provided child */

@@ -1,0 +1,80 @@
+.container{
+    display: flex;
+    flex-direction: column;
+}
+/* flex - will take the ratio and splits the width accordingly in ratio 
+  order- we can specify the order how it will display by giving numbers
+  flex direction - row(default) => side by side(horizontal(left to rigt)-main axsis ) vertical(top to bottom)- cross axsis
+                   column => line by line (vertical-main axsis)
+
+to align in flex-direction: ROW (hor-main/ver-cross);
+   main-axsis => justify-content (left to right)
+   cross- axsis => align-items  (top to bottom)
+  
+to align flex direction column (ver-main/hor-cross) : 
+   main axsis => justify-content(top to bot)
+   cross axsis => align-items(left to right)  
+  
+*/
+/* align self => for a particular box need to align separetly */
+
+/* flex-grow - will occupies the available space when the screen
+ width increses only to that particular box, other boxes will remain with same size*/
+
+/* flex-shrink - if we give 0 value => will keep the size same won't reduce if the screen size reduces */
+
+ .outerbox{
+    background-color: rgb(186, 186, 114);
+    min-width: 400px;
+    min-height: 300px;
+    padding: 10px;
+    display: flex;
+     flex-wrap: wrap;  /* will wrap accordily screen size */
+    /* flex-direction: row;
+    justify-content: center;
+    align-items: top; 
+    flex-direction: row;*/
+    justify-content: center;
+    align-items:center;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    margin: 8px;
+    background-color: rgb(200, 82, 31);
+    border: 1px solid ;
+}
+.box1{
+    flex-shrink: 0;
+    /* align-self: start; */
+}
+/* .box3{
+   flex: 1;
+} */
+ /* if we give basis 0 then those boxes with grow will share the availble spaces/ and maintain double size of other box equally */
+ .box3{
+    /* flex-grow:1 ;
+    flex-basis: 0; */
+ }
+ .box4{
+    /* flex-grow: 2;
+    flex-basis: 0; */
+ }
+p{
+    padding: 10px;
+}
+.para1{
+    background-color: chartreuse;
+    flex: 2;
+    order: 2;
+}
+.para2{
+    background-color: crimson;
+    flex: 1;
+    order: 3;
+}
+.para3{
+    background-color: aqua;
+    flex: 1;
+    order: 1;
+}

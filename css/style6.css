@@ -1,0 +1,46 @@
+/* 1. em => relative measurement 
+ for eg: if parent element have 20px as font-size  
+         it's child ele we gave 2em as a font size this will apply( 20x2 = 40) 40px will apply 
+
+ */
+
+ /* html{
+  font-size: 20px;   
+ } */
+ /* here con-child/ html-parent => from parent 20px 
+ in em it will calculate 20x2(child 2em) for con it will apply 40px*/
+ 
+ /* .container{
+     font-size: 2em; 
+ } */
+
+/* here con-parent / para1 - child so em will cal by given val in the child
+   for para1 60px will be applied
+*/
+ /* .para1{
+    font-size: 1.5em;  
+    font-size: 20px;
+ } */
+
+
+ /* (preffered one) 2.rem => will always takes from the root as a relative
+so for para2 40px will be applied, since root initialised with 20px 
+ */
+ /* .para2{
+    font-size: 2rem;
+ } */
+/* ======================================================== */
+
+/* vw(viewport width) => occupies viewport screen width acordingly by given val */
+/* vh(viewport height) => occupies viewport height acordingly by given val 
+
+this will stretch if increase or decrease 
+but in px the provided value will be fixed that won't stretch
+*/
+ .container{
+    width: 50vw;
+    height: 50vh;
+    border: 2px solid black;
+ }
+
+ /* % => values will take from it's parents */

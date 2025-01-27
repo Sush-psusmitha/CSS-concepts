@@ -1,0 +1,75 @@
+.bluebox{
+    background-color: blue;
+    width: 300px;
+    margin-top: 80px;
+    margin-left: 2px;
+    height: 300px;
+    position: relative; 
+    /* float: right;  
+    float: left;   */
+}
+/* .yellowbox{
+    height: 100px;
+    margin-left: 50px;
+    width: 100px;
+    background-color: gold;
+    position: relative;
+    /* top:30px; */
+    /* left: 100px;
+    bottom: 200px; 
+} */
+/* .yellowbox{   
+    background-color: yellow;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 100px; 
+    left: 90px;  
+} */
+
+/* .yellowbox{   
+    background-color: yellow;
+    height: 100px;
+    width: 100px;
+    position: fixed;  
+    top: 170px; 
+    left: 150px;  
+} */
+.yellowbox{   
+    background-color: yellow;
+    height: 100px;
+    width: 100px;
+    position: sticky;  
+    top: 0px;
+    bottom: 0px;
+    
+}
+
+/* 1. static postion: (default)
+showing line by line what is given is know as static postion  */
+
+/* 2.relative: 
+first we should declare relative,
+then if we give top/left/right/bottom properties with values this move accordingly from it's original state
+if we give top 10px for div this will create 10px space from top 
+if we give left 10px div will move and create 10 space in the left  
+like for right , and bottom 
+*/
+
+/* 3. absolute
+==> if has no parent element this won't create spaces for offset(top/b/l/r) instead it will  move towards the specified offset. 
+==> for ablosute parent element must be non-static(relative) then only this will make spacess from the specified offset val
+Eg: if bluw box is relative then yellow box is ablosute and the y'll box will create the speces from top/b/l/r if we mentioned those values
+==> if parent is not present this will do offset from the document 
+
+*/
+
+/* 4.fixed : 
+this will offset from the document root, NO parent crieteria.
+this if fixed in the specified postion only though we scorll it won't move
+*/
+
+/* sticky 
+if we give sticky by offset values t/b/r/l till that value, 
+we can scroll utill the offset meets. eg: maysystem right side table realted articles
+*/

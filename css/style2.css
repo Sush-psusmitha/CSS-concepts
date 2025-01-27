@@ -1,0 +1,44 @@
+ul{ 
+    /* list-syle-type: none/circle/disc/squre */
+    /* list-style-type: circle; */
+    /* list-style-image: url();   gives image as ul */
+    /* list-style-position: inside; */
+
+     /* bwe can give like this to  by multiple values*/ 
+     list-style: inside circle;
+}
+ol{
+    /*  list-style-type: decimal/decimal-leading-zero/lower-roma/lower-alpha/upper-alpha/lower-greek */
+    list-style-type: decimal-leading-zero;
+}
+li{
+    margin: 10px;
+}
+table{
+   width: 300px;  
+   margin: auto;
+   /* border-spacing: 9px 12px ; */
+   border-collapse: collapse;
+}
+th{
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: 2px solid black;
+    padding: 10px;
+   
+}
+tr{
+    text-align: center;
+}
+td{
+    padding: 10px;
+    border: 1px solid black;
+}
+/* .amt{
+  text-align: right;
+} */
+
+/* this will apply to the even rows */
+tr:nth-child(even){
+    background-color: whitesmoke;
+}
